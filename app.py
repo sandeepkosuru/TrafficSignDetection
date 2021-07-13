@@ -10,7 +10,7 @@ import warnings
 import tensorflow as tf
 from flask import Flask, request, render_template
 
-model=tf.keras.models.load_model('Trafic_signs_model.h5')
+model=tf.keras.models.load_model('model/model.h5')
 classes = { 1:'Speed limit (20km/h)',
             2:'Speed limit (30km/h)',      
             3:'Speed limit (50km/h)',       
@@ -83,4 +83,3 @@ def predict():
         
 if __name__=='__main__':
     app.run()
-        
