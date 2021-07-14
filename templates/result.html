@@ -1,20 +1,48 @@
 <html >
   <head>
+    
     <style>
       .center {
-  margin: auto;
-  width: 50%;
-  vertical-align: middle;
-  border: 3px solid black;
+    vertical-align: middle;
+    font-family: Arial, Helvetica, sans-serif;
+  border: 3px solid red;
   padding: 10px;
 }
+      body {
+    background-image: url('./images/bg.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    }
+    div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.97;
+  }
+  
+  div.transbox p {
+    margin: 5%;
+    
+    color: #000000;
+  }
+      
 
+      
     </style>
     <title>
     resultPage
     </title>
   </head>
   <body align="center">
-    <p> <h1 class="center">Type of Sign is {{name}}<h1><p>
+    <div class="background">
+      <div class="transbox">
+        <H1><u>Traffic Sign Detection</u></H1>
+    
+        <p class="center">Given Sign Board represents <b>{{name}}</b></p>
+
+      </div>
+    </div>
+    
   </body>
 </html>

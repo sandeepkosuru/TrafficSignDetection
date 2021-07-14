@@ -2,12 +2,39 @@
   <head>
   
     <title>Document</title>
-  </head>
+    </head>
+    <link rel="stylesheet" href="./static/style.css">
+<style>
+body {
+  background-image: url('./images/bg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  }
+  div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.97;
+  }
+  
+  div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+  }</style>
+ 
   <body align="center">
-    <H1>Traffic Sign Detection</H1>
+    <div class="background">
+      <div class="transbox">
+        <H1><u>Traffic Sign Detection</u></H1>    
     <form name="prediction" action="/predict"  method="post" enctype="multipart/form-data">
       <input type="file" accept="image/*" onchange="loadFile(event)" name="image_file" id="image" required>
       <p><img id="output" width="200"/></p>
+      <input  type="submit" value="Detect"/>
+      </div>
+    </div>
+    
       <script>
       var loadFile=function(event) {
         var image = document.getElementById('output');
@@ -15,7 +42,7 @@
       };
       </script>
 
-      <input  type="submit" name="submit"/>
+      
     </form>
   </body>
 </html>
