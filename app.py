@@ -1,12 +1,9 @@
 import numpy                             
-import pandas as pd
-import cv2             
+import pandas as pd  
 from tensorflow import keras
-from PIL import Image                           
-import os                                                
+from PIL import Image            
+import os                                                         
 from keras.models import Sequential, load_model                                   
-import warnings
-
 import tensorflow as tf
 from flask import Flask, request, render_template
 

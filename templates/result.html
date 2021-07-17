@@ -1,34 +1,19 @@
 <html >
   <head>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     
     <style>
+      body
+      {
+        background-image: url("{{url_for('static',filename='images/bg.jpg')}}");
+}   
       .center {
     vertical-align: middle;
     font-family: Arial, Helvetica, sans-serif;
   border: 3px solid red;
   padding: 10px;
-}
-      body {
-    background-image: url('./images/bg.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 100% 100%;
-    }
-    div.transbox {
-    margin: 30px;
-    background-color: #ffffff;
-    border: 1px solid black;
-    opacity: 0.97;
-  }
-  
-  div.transbox p {
-    margin: 5%;
-    
-    color: #000000;
-  }
-      
-
-      
+}     
     </style>
     <title>
     resultPage
